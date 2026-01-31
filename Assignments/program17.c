@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CkeckEvenOdd(int iNo)
+{
+    return ((iNo % 2) == 0);
+    
+}
+
+int main()
+{
+    int iValue = 0;
+    bool bRet = false ;                     // default value of boolean
+
+    printf("Enter the number ");
+    scanf("%d",&iValue);
+
+    bRet = CkeckEvenOdd(iValue);
+
+    if( bRet == true)
+    {
+        printf("%d is Even number\n",iValue);   
+    }
+    else
+    {
+        printf("%d is Odd number\n",iValue);
+    }
+    return 0 ;
+}
